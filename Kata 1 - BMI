@@ -1,0 +1,10 @@
+def bmi(weight, height):
+    bmi_calc = (weight / (height * height)) #created a variable to calculate the bmi
+    if bmi_calc > 30: #checks if the bmi is greater than 30
+        return "Obese" 
+    elif bmi_calc < 18.5: #if false then checks if bmi is less than 18.5
+        return "Underweight" 
+    elif bmi_calc <= 25: #if neither of above are true then checks if bmi is less than or equal to 25
+            return "Normal" 
+    else: #if none of the above are met return overweight
+        return "Overweight"
